@@ -7,7 +7,7 @@ config="custom.yml" # if you use other dataset, config/path_config.py should be 
 guid="smiling" # guid should be in utils/text_dic.py
 
 
-CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
+CUDA_VISIBLE_DEVICES=$gpu python3 main.py --run_train                        \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
                         --edit_attr $guid                                   \
